@@ -14,6 +14,7 @@
 		8BA9DA082142A8BF006F0873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA9DA062142A8BF006F0873 /* LaunchScreen.storyboard */; };
 		8BA9DA132142A8BF006F0873 /* ContactListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA9DA122142A8BF006F0873 /* ContactListAppTests.swift */; };
 		8BA9DA1E2142A8BF006F0873 /* ContactListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA9DA1D2142A8BF006F0873 /* ContactListAppUITests.swift */; };
+		8BA9DA2C2142B6BC006F0873 /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA9DA2B2142B6BC006F0873 /* ContactsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8BA9DA192142A8BF006F0873 /* ContactListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA9DA1D2142A8BF006F0873 /* ContactListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListAppUITests.swift; sourceTree = "<group>"; };
 		8BA9DA1F2142A8BF006F0873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BA9DA2B2142B6BC006F0873 /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				8BA9D9FD2142A8BD006F0873 /* AppDelegate.swift */,
 				8BA9D9FF2142A8BD006F0873 /* ViewController.swift */,
+				8BA9DA2B2142B6BC006F0873 /* ContactsModel.swift */,
 				8BA9DA012142A8BD006F0873 /* Main.storyboard */,
 				8BA9DA042142A8BF006F0873 /* Assets.xcassets */,
 				8BA9DA062142A8BF006F0873 /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BA9DA002142A8BD006F0873 /* ViewController.swift in Sources */,
+				8BA9DA2C2142B6BC006F0873 /* ContactsModel.swift in Sources */,
 				8BA9D9FE2142A8BD006F0873 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

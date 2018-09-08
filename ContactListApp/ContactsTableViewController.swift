@@ -55,16 +55,20 @@ class ContactsTableViewController: UITableViewController {
     
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ShowCurrentContactDetails" {
+        let segueId: String? = segue.identifier
+        
+        switch segueId {
+        case VcId.details.rawValue:
             guard let currentContactVc = segue.destination as? CurrentContactViewController else {return}
             
             currentContactVc.currentContact = selectedContact
-        }
-        
-        if segue.identifier == "AddNewContactDetails" {
-            if let createContactTableView = segue.destination as? CreateContactTableViewController  {
-                createContactTableView.delegate = self
-            }
+            
+        case VcId.add.rawValue:
+            guard let createContactTableView = segue.destination as? CreateContactTableViewController  else {return}
+            
+            createContactTableView.delegate = self
+        default:
+            return
         }
     }
 }
@@ -73,8 +77,12 @@ class ContactsTableViewController: UITableViewController {
 extension ContactsTableViewController: AddNewContactDelegate {
     func addContact(newContact: Contact) {
         contactList.append(newContact)
-//        tableView.reloadData()
     }
+}
+
+enum VcId: String {
+    case add = "AddNewContactDetails"
+    case details = "ShowCurrentContactDetails"
 }
 
 

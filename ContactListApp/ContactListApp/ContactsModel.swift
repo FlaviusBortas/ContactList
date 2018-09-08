@@ -8,10 +8,17 @@
 
 import Foundation
 
-struct Contact {
+class Contact {
     var name: String
     var phoneNumber: String
     var email: String
+    
+    init(name: String, phoneNumber: String, email: String) {
+        self.name = name
+        self.phoneNumber = phoneNumber
+        self.email = email
+    }
+    
 }
 
 extension Contact {

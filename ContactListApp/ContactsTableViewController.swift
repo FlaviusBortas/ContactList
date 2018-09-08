@@ -60,8 +60,23 @@ class ContactsTableViewController: UITableViewController {
             
             currentContactVc.currentContact = selectedContact
         }
+        
+        if segue.identifier == "AddNewContactDetails" {
+            if let createContactTableView = segue.destination as? CreateContactTableViewController  {
+                createContactTableView.delegate = self
+            }
+        }
     }
-    
-    
-    
 }
+
+
+extension ContactsTableViewController: AddNewContactDelegate {
+    func addContact(newContact: Contact) {
+        contactList.append(newContact)
+//        tableView.reloadData()
+    }
+}
+
+
+
+

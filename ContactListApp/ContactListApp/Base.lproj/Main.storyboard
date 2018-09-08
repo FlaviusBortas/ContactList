@@ -13,7 +13,7 @@
         <!--Create New Contact-->
         <scene sceneID="LzG-DS-mHJ">
             <objects>
-                <tableViewController id="pRk-2b-MOs" sceneMemberID="viewController">
+                <tableViewController id="pRk-2b-MOs" customClass="CreateContactTableViewController" customModule="ContactListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="CvW-Ud-xgi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,9 +81,22 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Create New Contact" id="v7n-ke-Avv">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="0Qz-nB-qIZ"/>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="dgj-AS-Gdg"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="0Qz-nB-qIZ">
+                            <connections>
+                                <action selector="cancelTapped:" destination="pRk-2b-MOs" id="hIi-ce-WO6"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="dgj-AS-Gdg">
+                            <connections>
+                                <action selector="doneTapped:" destination="pRk-2b-MOs" id="Qui-I6-oLp"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="newContactEmailTextField" destination="J6j-hN-mbi" id="GKK-yY-ank"/>
+                        <outlet property="newContactNameTextField" destination="IPq-lD-lKD" id="r0R-Vb-hYL"/>
+                        <outlet property="newContactPhoneTextField" destination="awZ-qA-kv8" id="qG9-jV-9yr"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Scz-4C-d96" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

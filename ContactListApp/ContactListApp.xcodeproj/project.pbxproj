@@ -16,6 +16,7 @@
 		8BA9DA2C2142B6BC006F0873 /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA9DA2B2142B6BC006F0873 /* ContactsModel.swift */; };
 		8BA9DA2E2142F447006F0873 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA9DA2D2142F447006F0873 /* ContactsTableViewController.swift */; };
 		8BA9DA322143007E006F0873 /* CurrentContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA9DA312143007E006F0873 /* CurrentContactViewController.swift */; };
+		8BA9DA34214415B0006F0873 /* CreateContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA9DA33214415B0006F0873 /* CreateContactTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		8BA9DA2B2142B6BC006F0873 /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
 		8BA9DA2D2142F447006F0873 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		8BA9DA312143007E006F0873 /* CurrentContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentContactViewController.swift; sourceTree = "<group>"; };
+		8BA9DA33214415B0006F0873 /* CreateContactTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContactTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				8BA9DA312143007E006F0873 /* CurrentContactViewController.swift */,
 				8BA9DA2D2142F447006F0873 /* ContactsTableViewController.swift */,
+				8BA9DA33214415B0006F0873 /* CreateContactTableViewController.swift */,
 				8BA9D9FC2142A8BD006F0873 /* ContactListApp */,
 				8BA9DA112142A8BF006F0873 /* ContactListAppTests */,
 				8BA9DA1C2142A8BF006F0873 /* ContactListAppUITests */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA9DA34214415B0006F0873 /* CreateContactTableViewController.swift in Sources */,
 				8BA9DA2C2142B6BC006F0873 /* ContactsModel.swift in Sources */,
 				8BA9D9FE2142A8BD006F0873 /* AppDelegate.swift in Sources */,
 				8BA9DA2E2142F447006F0873 /* ContactsTableViewController.swift in Sources */,

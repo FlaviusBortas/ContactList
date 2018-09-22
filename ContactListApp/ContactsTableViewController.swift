@@ -56,7 +56,6 @@ class ContactsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectedContact = contactList[indexPath.row]
-      
         
         self.performSegue(withIdentifier: "ShowCurrentContactDetails", sender: indexPath.row)
     }
@@ -87,12 +86,6 @@ extension ContactsTableViewController: AddNewContactDelegate {
         contactList.append(newContact)
     }
 }
-
-enum VcId: String {
-    case add = "AddNewContactDetails"
-    case details = "ShowCurrentContactDetails"
-}
-
 
 
 
